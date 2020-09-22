@@ -8,27 +8,27 @@
 
   <div class="form-group">
     <%= label_tag :first_name, 'First Name' %>
-    <%= f.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
+    <%= f.text_field :first_name, :required => true, class: 'form-control', placeholder: 'First Name' %>
   </div>
 
   <div class="form-group">
     <%= label_tag :last_name, 'Last Name' %>
-    <%= f.text_field :last_name, class: 'form-control', placeholder: 'Last Name' %>
+    <%= f.text_field :last_name, :required => true, class: 'form-control', placeholder: 'Last Name' %>
   </div>
 
   <div class="form-group">
     <%= label_tag :email, 'Email' %>
-    <%= f.text_field :email, class: 'form-control', placeholder: 'Email' %>
+    <%= f.text_field :email, :required => true, class: 'form-control', placeholder: 'Email' %>
   </div>
 
   <div class="form-group">
     <%= label_tag :password, 'Password' %>
-    <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
+    <%= f.password_field :password, :required => true, class: 'form-control', placeholder: 'Password' %>
   </div>
 
   <div class="form-group">
     <%= label_tag :password_confirmation, 'Password Confirmation' %>
-    <%= f.password_field :password_confirm, class: 'form-control', placeholder: 'Password Confirmation' %>
+    <%= f.password_field :password_confirm, :required => true, class: 'form-control', placeholder: 'Password Confirmation' %>
   </div>
   
   <%= f.submit "Submit" %>
