@@ -1,0 +1,39 @@
+<header class="page-header">
+    <h1>SIGN UP !!!</h1>
+  </header>
+
+<div class="well">
+
+<%= form_for :user, url: '/users' do |f| %>
+
+  <div class="form-group">
+    <%= label_tag :first_name, 'First Name' %>
+    <%= f.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :last_name, 'Last Name' %>
+    <%= f.text_field :last_name, class: 'form-control', placeholder: 'Last Name' %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :email, 'Email' %>
+    <%= f.text_field :email, class: 'form-control', placeholder: 'Email' %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :password, 'Password' %>
+    <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :password_confirmation, 'Password Confirmation' %>
+    <%= f.password_field :password_confirm, class: 'form-control', placeholder: 'Password Confirmation' %>
+  </div>
+  
+  <%= f.submit "Submit" %>
+
+<% end %>
+
+</div>
+
